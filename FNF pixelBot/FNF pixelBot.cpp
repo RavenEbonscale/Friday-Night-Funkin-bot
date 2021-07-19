@@ -6,7 +6,7 @@
 #define down_arrow {860,103}
 #define up_arrow {969,103}
 //need to adjust to be less center
-#define right_arrow {1104,103}
+#define right_arrow {1081,103}
 #define Empty_arrow_color 11379591
 
 int main()
@@ -89,8 +89,10 @@ int main()
 				
 
 			}
+
 			
 		}
+		
 		if (GetAsyncKeyState(VK_NUMPAD3)) { // Exit
 			return 0;
 		}
