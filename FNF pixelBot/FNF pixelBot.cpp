@@ -46,6 +46,7 @@ int main()
 			HWND hwND = FindWindow(NULL, window);
 			std::cout << "Start Game!" << std::endl;
 			Sleep(10);
+			break;
 		}
 
 		//Start Bot

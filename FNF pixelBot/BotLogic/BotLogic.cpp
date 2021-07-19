@@ -17,7 +17,7 @@ void BotLogic::ColorChange_Arrow(bool& exit_flag, POINT la, COLORREF emptyecolor
         }
         
         //still adjusting the time 
-        std::this_thread::sleep_for(std::chrono::milliseconds(20));
+        std::this_thread::sleep_for(std::chrono::milliseconds(25));
 
         //Good memory managment is always good~ OWO
         ReleaseDC(hwND, hdc);
@@ -37,7 +37,7 @@ void BotLogic::press_key(SHORT virtual_key_code)
     Input.type = INPUT_KEYBOARD;
     Input.ki.wVk = virtual_key_code;
     Input.ki.dwFlags = KEYEVENTF_KEYUP;
-    std::this_thread::sleep_for(std::chrono::milliseconds(50));
+    std::this_thread::sleep_for(std::chrono::milliseconds(5));
     SendInput(1, &Input, sizeof(Input));
     ZeroMemory(&Input, sizeof(Input));
 }
