@@ -22,7 +22,7 @@ int main()
 	POINT down = down_arrow;
 	POINT up = up_arrow;
 	POINT right = right_arrow;
-	LPCWSTR w[3] = { L"Friday Night Funkin'", L"Friday Night Funkin' Kade Engine",L"High Effort Ugh"};
+	LPCWSTR w[4] = { L"Friday Night Funkin'", L"Friday Night Funkin' Kade Engine",L"High Effort Ugh",L"Friday Night Funkin': Mid-Fight Masses - Selever Edition"};
 	bool Exit_flag = false;
 	POINT origin = { 0,0 };
 	RECT rect;
