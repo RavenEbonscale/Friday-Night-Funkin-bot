@@ -51,8 +51,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
+ FILEVERSION 1,2,1,0
+ PRODUCTVERSION 1,2,1,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -68,12 +68,12 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "FileDescription", "Play's FNF for you~"
-            VALUE "FileVersion", "1.0.0.1"
+            VALUE "FileVersion", "1.2.1.0"
             VALUE "InternalName", "FNF.exe"
             VALUE "LegalCopyright", "Copyright  Raven Ebonscale (C) 2021"
             VALUE "OriginalFilename", "FNF.exe"
             VALUE "ProductName", "Friday Night Funkin' Bot"
-            VALUE "ProductVersion", "1.0.0.1"
+            VALUE "ProductVersion", "1.2.1.0"
         END
     END
     BLOCK "VarFileInfo"

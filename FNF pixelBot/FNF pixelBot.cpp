@@ -22,7 +22,12 @@ int main()
 	POINT down = down_arrow;
 	POINT up = up_arrow;
 	POINT right = right_arrow;
-	LPCWSTR w[4] = { L"Friday Night Funkin'", L"Friday Night Funkin' Kade Engine",L"High Effort Ugh",L"Friday Night Funkin': Mid-Fight Masses - Selever Edition"};
+	LPCWSTR w[6] = { 
+		L"Friday Night Funkin'", 
+		L"Friday Night Funkin' Kade Engine",
+		L"High Effort Ugh",L"Friday Night Funkin': Mid-Fight Masses - Selever Edition",
+		L"Friday Night Funkin' Vs. Sasha",L"Friday Night Funkin' Modding Plus"
+	};
 	bool Exit_flag = false;
 	POINT origin = { 0,0 };
 	RECT rect;
@@ -42,7 +47,7 @@ int main()
 		{
 			for (LPCWSTR n : w) {
 
-
+				
 				HWND hwND = (FindWindow(NULL, n));
 				
 
@@ -54,10 +59,11 @@ int main()
 					bl.Bot(Exit_flag, bl, left, hwND, down, up, right);
 					
 				}
-				std::cout << "Start Game" << std::endl;
+				
 				Sleep(100);
 			}
-			break;
+			
+			std::cout << "Start Game" << std::endl;
 			
 		}
 
