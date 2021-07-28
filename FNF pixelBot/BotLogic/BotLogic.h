@@ -1,6 +1,8 @@
 #include<iostream>
 #include<thread>
 #include<chrono>
+#include<map>
+#include<string>
 #include<Windows.h>
 
 #define Empty_arrow_color 11379591
@@ -13,6 +15,14 @@ public:
 	//
 
 private:
+	//key map
+	std::map<int, std::string> arrowkeys = 
+	{ 
+		{37,"left"},
+		{ 39,"right"},
+		{ 38,"up"},
+		{ 40,"down"} 
+	};
 	//predd keys
 	void press_key(SHORT virtual_key_code);
 	//Checks if there is a color change for the arrow

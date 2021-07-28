@@ -145,7 +145,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BotLogic\BotLogic.h" />
-    <ClInclude Include="FNF pixelBot.h" />
     <ClInclude Include="Recources\resource1.h" />
   </ItemGroup>
   <ItemGroup>
