@@ -3,6 +3,7 @@
 #include<windows.h>
 
 
+
 #define left_arrow {734,103}
 #define down_arrow {860,103}
 #define up_arrow {969,103}

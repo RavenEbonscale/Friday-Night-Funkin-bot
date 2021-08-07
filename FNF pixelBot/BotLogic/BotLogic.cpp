@@ -16,7 +16,7 @@ void BotLogic::ColorChange_Arrow(bool& exit_flag, POINT la, COLORREF emptyecolor
             std::cout << "Button " << arrowkeys[input]  << " Hit!" << std::endl;
            
             t_keypress.join();
-			std::this_thread::sleep_for(std::chrono::milliseconds(20));
+			std::this_thread::sleep_for(std::chrono::milliseconds(15));
 
         }
         
@@ -56,7 +56,7 @@ void BotLogic::Bot(bool& Exit_flag, BotLogic& bl, POINT& left, HWND& hwND, POINT
 					t_down.join();
 					t_up.join();
 					t_right.join();
-					ReleaseDC(hwND, NULL);
+					ReleaseDC(hwND,NULL);
 					break;
 				}
 
@@ -83,7 +83,7 @@ void BotLogic::press_key(SHORT virtual_key_code)
     Input.type = INPUT_KEYBOARD;
     Input.ki.wVk = virtual_key_code;
     Input.ki.dwFlags = KEYEVENTF_KEYUP;
-    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+    std::this_thread::sleep_for(std::chrono::milliseconds(5));
     SendInput(1, &Input, sizeof(Input));
     ZeroMemory(&Input, sizeof(Input));
 }
